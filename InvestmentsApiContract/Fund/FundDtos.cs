@@ -109,5 +109,4 @@ namespace InvestmentsApiContract.Fund
     Failed = 5,
     Cancelled = 6
   }
-
 }

@@ -8,21 +8,18 @@ namespace InvestmentsApiContract.Trade
 {
   public interface ITrade
   {
-    string BuyFund(TradeDto dto);
+    string BuyFund(CreateTradeDto dto);
 
-    string BuyFunds(List<TradeDto> dtos);
+    string BuyFunds(List<CreateTradeDto> dtos);
 
-    string SellFund(TradeDto dto);
+    string SellFund(CreateTradeDto dto);
 
-    string SellFunds(List<TradeDto> dto);
+    string SellFunds(List<CreateTradeDto> dto);
 
-    List<TradeDto> GetMemberTrades();
+    List<TradeDto> GetMemberPendingTrades();
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="tradeId"></param>
-    /// <returns>In case of a success, returns null. In case of an error, returns a user friendly error message.</returns>
+    List<TradeDto> GetMemberCancelledTrades();
+
     string CancelTrade(string tradeId);
   }
 }

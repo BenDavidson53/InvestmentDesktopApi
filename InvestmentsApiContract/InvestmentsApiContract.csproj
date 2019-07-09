@@ -46,8 +46,12 @@
     <Compile Include="Fund\IFund.cs" />
     <Compile Include="InvestmentSettings\AutoInvestSettingsDto.cs" />
     <Compile Include="InvestmentSettings\AutoRebalanceSettingsDto.cs" />
+    <Compile Include="InvestmentSettings\FakeManageInvestmentSettingsApi.cs" />
     <Compile Include="InvestmentSettings\IManageInvestmentSettings.cs" />
     <Compile Include="InvestmentSettings\InvestmentSettingsDto.cs" />
+    <Compile Include="Portfolio\FakePortfolioApi.cs" />
+    <Compile Include="Portfolio\IPortfolio.cs" />
+    <Compile Include="Portfolio\PortfolioDtos.cs" />
     <Compile Include="Trade\FakeTradeApi.cs" />
     <Compile Include="Trade\ITrade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

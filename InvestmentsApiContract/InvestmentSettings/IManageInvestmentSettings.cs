@@ -11,7 +11,6 @@ namespace InvestmentsApiContract.InvestmentSettings
     string UpdateAutoInvestSettings(AutoInvestSettingsDto dto);
     string UpdateAutoRebalanceSettings(AutoRebalanceSettingsDto dto);
     InvestmentSettingsDto GetMemberInvestmentSettings();
-
     bool IsNewInvestmentFlowAccessible();
   }
 }
